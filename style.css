@@ -11,3 +11,8 @@ body {
 .basicInfo {
     text-align: center;
 }
+
+.centerImage {
+    text-align: center;
+    display: block;
+}
