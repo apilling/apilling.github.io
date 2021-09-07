@@ -1,5 +1,13 @@
 body {
     margin: 0;
     background: orange;
+}
+
+#Title{
+    color: blue;
+    text-align: center;
+}
+
+.basicInfo {
     text-align: center;
 }
