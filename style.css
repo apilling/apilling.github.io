@@ -22,5 +22,7 @@ body {
 
 .progressImage {
     display: block;
+    width: 140;
+    height:303;
 }
 
