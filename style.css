@@ -26,3 +26,13 @@ body {
     height: 400;
 }
 
+li {
+    margin-right: 40%;
+    font-size: 17px;
+}
+
+h2 {
+    color: rgba(0, 81, 255, 0.788);
+    font-size: 25px;
+}
+
