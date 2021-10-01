@@ -33,7 +33,7 @@
             </ul>
         <li>Snake Game Web App</li>
             <ul>
-                <li>Web Page: <a href="https://apilling.github.io/snake-game-app/index.html">Snake Game</a></li>
+                <li>Web Page: <a href="https://apilling.github.io/snake-game-app/">Snake Game</a></li>
                 <li>Repository Link: <a href="https://github.com/apilling/snake-game-app.git">https://github.com/apilling/snake-game-app.git</a></li>
             </ul>
 
@@ -84,7 +84,7 @@
         <li>Time permitting start my own basic game web app. Currently thinking about trying to build Snake. At least try to get the game board prepared.</li>
     </ul>
 
-    <h3>Milestone 4</h3>
+    <h3>Final Submission</h3>
 
     <ul>
         <li>Look at the UI design tutorial <a href="https://sun.iwu.edu/~mliffito/cs_codex/posts/user-interface-design/">UI Design</a></li>
@@ -196,7 +196,7 @@
                         Additionally, I tested that closing the "add new card" modal did not change anything on the screen and just exited the modal. 
                     </li>
                 </ul>
-            <li>Began work on my snake game web app <a href="https://apilling.github.io/snake-game-app/index.html">Snake Game</a></li>
+            <li>Began work on my snake game web app <a href="https://apilling.github.io/snake-game-app/">Snake Game</a></li>
                 <ul>
                     <li>The game board was a bit more complex than I thought it would be but I found a very helpful guide on the internet.
                         <a href="https://dev.to/aligumustosun/making-a-snake-game-using-react-hooks-5606">(Guide)</a>
@@ -206,6 +206,55 @@
                     </li>
                 </ul>
             <li>Same as the previous week, continued use of the mimo app.</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Final Submission</h3>
+        <ul>
+            <li>Finished the snake game (followed <a href="https://dev.to/aligumustosun/making-a-snake-game-using-react-hooks-5606">this guide</a> for basic game</li>
+                <ul>
+                    <li>Most of my time this week was spent finishing the snake game and adding in many features to make the game more fun. Doing this taught me a lot about
+                        typescript and React. This is especially true for using hooks with useState. As you can see from the code, they were crucial to be able to implement 
+                        the desired features.
+                    </li>
+                    <li>The first feature I implemented this week was the moving snake. This was done by creating a list of coordinates from the board that is a 2D array.
+                        This was relatively straight forward and the guide mentioned above was very helpful in getting it running. This also required a custom useInterval
+                        function to set the speed of the snake and constantly call the movesnake function. This was also given by the guide.
+                    </li>
+                    <li>
+                        The next feature was getting the food to pop up randomly on the board which was as simple as making a random coordinate generator and setting
+                        the food equal to the output. This was then added to the displaySnake and movesnake functions. This was the extent of the guide however there were many 
+                        more features I wanted to add.
+                    </li>
+                    <li>The first thing I wanted to do was add a losing mechanic so that the game actually had a purpose. I did this by making a conditional in movesnake
+                        to stop the game and run a gameOver function. This game over function was simple as all it did was use hooks to display a modal that tells the player
+                        they lost. This was much different than anything I've done before because I had to display a modal without clicking a button. It took me a while to figure
+                        out how to get it to work properly. I also wanted to add a score to the losing modal. This was easily achieved by creating a score variable that was Updated
+                        when the food was eaten by the snake and displaying that variable in the modal.
+                    </li>
+                    <li>
+                        I also wanted to have an active score tracker while the game was going on. I tried many different options but once again useState was the way to go
+                        and made it easy to keep track of the score. The setPlayerScore from useState was the only way I was able to actually update the score on screen. I also
+                        decided to make it its own functional component to make it easier to set up. 
+                    </li>
+                    <li>
+                        The final thing I wanted to add to the game was difficulty levels. This once again proved a little difficult but useState was the way to go. I did
+                        however have to create some separate functions inside of the difficultyButtons functional component to be able to change the speed to what I wanted it to 
+                        be but that was relatively simple. Once I changed was able to change the speed, I decided that I wanted the difficulties to be more unique than just 
+                        movement speed. I did this by changing the score each difficulty recieved for eating a food but more importantly I figured out how to make the snake add more
+                        than one sqaure to the end. I did this by using a variable count down to delay the .pop() function moveSnake usually uses to keep the snake the same length.
+                        Now all of the difficulties feel unique with speed, scoring, and length per food added to the snake. 
+                    </li>
+                    <li>
+                        After I finished implementing the features I wanted to make it a little more stylish. So I made some css files for each functional component and adjusted 
+                        some of the Bootstrap features like the modal and the buttons. Design is not my strong suit but I'm pretty satisfied with the way it came out.
+                    </li>
+                    <li>
+                        Overall this was a great way to learn React and I feel much more comfortable using hooks. 
+                    </li>
+                    
+                </ul>
+            <li>Continued use of the mimo app</li>
         </ul>
     </div>
 
@@ -236,6 +285,12 @@
             <li>Updated Progress log with snake game app start</li>
             <li>Updated "To Do" section to show links and more details</li>
             <li>Updated Current Web Pages section to show new web pages</li>
+        </ul>
+    <h3>Final Submission</h3>
+        <ul>
+            <li>Updated Snake game web page link</li>
+            <li>Updated Final Submission section with explaination of how I completed the Snake game</li>
+
         </ul>
     
 </body>
